@@ -5,6 +5,7 @@
 docker run -v ./stunnel.conf:/etc/stunnel/stunnel.conf -p 25:25 bmlandis2010/stunnel
 ```
 ### Docker Compose
+```
 services:
   stunnel:
     container_name: stunnel
@@ -14,3 +15,4 @@ services:
     volumes:
       - ./stunnel.conf:/etc/stunnel/stunnel.conf
     restart: always
+```
